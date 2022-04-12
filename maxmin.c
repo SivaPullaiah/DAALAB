@@ -21,7 +21,8 @@ int maxmin(int arr[], int n)
       if(max<arr[i])
         max=arr[i];
     }
-  }
+  } 
+  //if you maintain max, min has static Variables it is accessible by all the program
   printf("Max=%d\nMin=%d",max,min);
 }
 
