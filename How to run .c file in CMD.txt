@@ -1,0 +1,19 @@
+step1:
+	Run the command ‘gcc -v’ to check if you have a compiler installed.
+step2:
+	create a c program file with extention .c 
+	Example:  test.c
+step3:
+	Go where the file is available 
+	and then click file poth and type cmd
+	it will set the file poth
+step4:
+	Now compile the file with command
+	gcc test.c
+	it will compile and generate .exe file defaultly a.exe
+	if it is available it will generate b.exe
+	you can change the name as test.exe
+step5:
+	Final step is Run the programe
+	valid port of comipled .exe file
+	Example: test
