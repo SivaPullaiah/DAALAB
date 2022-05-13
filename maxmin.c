@@ -1,9 +1,9 @@
 #include<stdio.h>
 
+int max,min;
 
 int maxmin(int arr[], int n)
 {
-  int min, max;
   min=max=arr[0];
   for(int i=0; i<n-1; i++)
   {
@@ -22,17 +22,18 @@ int maxmin(int arr[], int n)
         max=arr[i];
     }
   }
-  printf("Max=%d\nMin=%d",max,min);
+  //if you maintain max, min has static Variables it is accessible by all the program
+  //printf("Max=%d\nMin=%d",max,min);
 }
 
-/*void print(int max, int min)
+void print(int Max, int Min)
 {
-  printf("Max=%d\nMin=%d",max,min);
-}*/
+  printf("Max=%d\nMin=%d",Max,Min);
+}
 
 void main()
 {
-  int n, max,min;
+  int n;
   printf("Enter the size of an array: ");
   scanf("%d", &n);
 
@@ -41,6 +42,6 @@ void main()
   for(int i=0; i<n; i++)
     scanf("%d", &arr[i]);
 
-  max,min=maxmin(arr, n);
-//  print(max,min);
+  maxmin(arr, n);
+  print(max,min);
 }
