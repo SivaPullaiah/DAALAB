@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background: linear-gradient(45deg, rgb(247, 74, 6), rgb(14, 113, 194));
+        }
+        .center {
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+/* border: 5px solid #00ff0d;*/
+padding: 10px;
+}
+input{
+    height: 25px;
+    width: 250px;
+    border-radius: 25px;
+    font-size: medium;
+    border: 0;
+    padding: 9px;
+}
+h1{
+    color: #fff
+}
+#siva{
+    color: #fff;
+}
+button{
+            border-radius: 25px;
+            padding: 9px;
+            width: 100px;
+            background-color:#1a73e8;
+            color: #fff;
+            border: 0;
+            cursor:pointer;
+            font-size: large;
+        }
+button:hover{
+        background-color: #fff;
+        color: #1a73e8;
+        cursor: pointer;
+        font-size: large;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate(){
+            var id = document.getElementById('lid').value;
+            var pwd = document.getElementById('pwd').value;
+            var regex1 = /[a-zA-Z0-9]+/;
+            var regex2 = /[a-zA-Z0-9]*[@$&^]*/
+            if(regex1.test(id) && regex2.test(pwd))
+                return true;
+            return false;
+        }
+     
+    </script>
+</head>
+<body>
+    <div class="center">
+        <h1 align="center">LOGIN</h1>
+    <form   onsubmit="return (validate());" action="success.html" method="get">
+        <table align="center">
+            <tr>
+                <td for="log" id="siva">LogIn ID: </td>
+                <td><input type="text" id="log" placeholder="Enter name" /></td>
+            </tr>
+            <tr>
+            <td for="pass" id="siva">Password: </td>
+            <td><input type="password" id="pass" placeholder="enter password"/></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" >
+                    <br><button >Submit</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
