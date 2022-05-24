@@ -17,3 +17,8 @@ step5:
 	Final step is Run the programe
 	valid port of comipled .exe file
 	Example: test
+
+step6***: 	At the time of compilling you can specifi the .exe file name also
+			for that you want do:
+			gcc file_name.c -o object_name.exe
+			now simply you can type object_name and hit enter
